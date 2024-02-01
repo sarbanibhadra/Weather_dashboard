@@ -1,7 +1,7 @@
 
 /**
  * pulls information from the form and build the query URL
- * @returns {string} URL for NYT API based on form inputs
+ * @returns {string} URL for Weather Dashboard API based on form inputs
  */
 function buildQueryURL(input) {
   // queryURL is the url we'll use to query the API
@@ -23,14 +23,14 @@ function buildQueryURL(input) {
 
 /**
  * takes API data (JSON/object) and turns it into elements on the page
- * @param {object} WeatherData - object containing NYT API data
+ * @param {object} WeatherData - object containing Weather Dashboard API data
  */
 function updatePage(WeatherData) {
   // Get from the form the number of results to display
   // API doesn't have a "limit" parameter, so we have to do this ourselves
 
 
-  // Log the NYTData to console, where it will show up as an object
+  // Log the Weather DashboardData to console, where it will show up as an object
   console.log(WeatherData);
   console.log("------------------------------------");
 
@@ -158,7 +158,7 @@ $("#search-button").on("click", function (event) {
   input = $("#search-input")
     .val()
     .trim();
-  // Build the query URL for the Fetch request to the NYT API
+  // Build the query URL for the Fetch request to the Weather Dashboard API
   var queryURL = buildQueryURL(input);
 
   // Make the Fetch request to the API - GETs the JSON data at the queryURL.
@@ -185,7 +185,7 @@ $(".btn-secondary").on("click", function(event) {
   // Empty the region associated with the articles
   
 
-  // Build the query URL for the Fetch request to the NYT API
+  // Build the query URL for the Fetch request to the Weather Dashboard API
   var queryURL = buildQueryURL(input);
 
   // Make the Fetch request to the API - GETs the JSON data at the queryURL.
@@ -198,7 +198,7 @@ $(".btn-secondary").on("click", function(event) {
 });
 
 function myFunction(input){
-  // Build the query URL for the Fetch request to the NYT API
+  // Build the query URL for the Fetch request to the Weather Dashboard API
   var queryURL = buildQueryURL(input);
 
   // Make the Fetch request to the API - GETs the JSON data at the queryURL.
