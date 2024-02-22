@@ -49,7 +49,7 @@ The following image shows the web application's appearance and functionality:
 
 * The URL of the functional, deployed application: https://sarbanibhadra.github.io/Weather_dashboard/starter/
 
-* The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
+* The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project: https://github.com/sarbanibhadra/Weather_dashboard
 
 ---
 
